@@ -3,7 +3,8 @@
   --fg: #1a1a1a;
   --muted: #6b7280;
   --line: #e5e7eb;
-  --accent: #111827;
+  --accent: #4f46e5;
+  --pop: #4f46e5;
   --max: 880px;
   --space: 1.5rem;
 }
@@ -14,14 +15,15 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--fg);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -49,24 +51,7 @@ body {
   font-weight: 700;
   font-size: 1.25rem;
   text-decoration: none;
-  color: var(--fg);
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--muted);
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: var(--fg);
+  color: var(--accent);
 }
 
 /* Hero */
@@ -78,7 +63,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.8rem;
-  color: var(--muted);
+  color: var(--accent);
   margin-bottom: 1rem;
 }
 
@@ -111,26 +96,6 @@ body {
   opacity: 0.85;
 }
 
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.btn-text {
-  color: var(--fg);
-  text-decoration: none;
-  font-size: 0.95rem;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 2px;
-  transition: border-color 0.2s ease;
-}
-
-.btn-text:hover {
-  border-color: var(--accent);
-}
-
 .currently {
   margin-top: 1.5rem;
   display: inline-flex;
@@ -158,6 +123,8 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 0.75rem;
 }
 
 .prose {
@@ -188,7 +155,7 @@ body {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--muted);
+  color: var(--accent);
   margin-bottom: 0.6rem;
 }
 
@@ -231,6 +198,12 @@ body {
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
   color: var(--muted);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.skills li:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* Contact */
