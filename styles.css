@@ -38,6 +38,8 @@ body {
 /* Header */
 .site-header {
   border-bottom: 1px solid var(--line);
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, #4f46e5, #0ea5e9, #10b981, #f59e0b, #ec4899) 1;
 }
 
 .nav {
@@ -59,15 +61,25 @@ body {
   padding: 6rem 1.5rem 4rem;
 }
 
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 320px;
+}
+
 .avatar {
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
+  width: 180px;
+  height: 220px;
+  border-radius: 14px;
   object-fit: cover;
   display: block;
-  margin-bottom: 1.5rem;
   border: 3px solid #fff;
-  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.18);
+  box-shadow: 0 10px 26px rgba(79, 70, 229, 0.22);
 }
 
 .eyebrow {
@@ -137,6 +149,11 @@ body {
   border-left: 4px solid var(--accent);
   padding-left: 0.75rem;
 }
+
+#about .section-title { border-left-color: #0ea5e9; }
+#work .section-title { border-left-color: #4f46e5; }
+#skills .section-title { border-left-color: #10b981; }
+#contact .section-title { border-left-color: #ec4899; }
 
 .prose {
   color: var(--muted);
@@ -214,7 +231,8 @@ body {
 
 .skills li:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  background: var(--accent);
+  color: #fff;
 }
 
 /* Contact */
