@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jane Doe — Portfolio &amp; Résumé</title>
+  <title>Sam Joseph Thimothy — Robotics &amp; AI Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container">
-      <a class="logo" href="#top">Jane&nbsp;Doe</a>
+      <a class="logo" href="#top">Sam&nbsp;Joseph</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
+        <li><a href="#work">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -22,62 +22,93 @@
   <main id="top">
     <section class="hero container">
       <p class="eyebrow">Hi, I'm</p>
-      <h1>Jane Doe</h1>
+      <h1>Sam Joseph Thimothy</h1>
       <p class="lead">
-        A curious computer-science student who likes turning messy ideas
-        into things that actually work. I care about clean code, clear
-        writing, and making tech a little friendlier for everyone.
+        A CSE (AI &amp; Robotics) student who likes building things that
+        move, sense, and think — from quadruped robot dogs to ESP32
+        gadgets and machine-learning models. I learn fastest by making.
       </p>
       <div class="hero-actions">
         <a class="btn" href="#contact">Say hello</a>
-        <a class="btn-text" href="#work">See what I've made ↓</a>
+        <a class="btn-text" href="#work">See what I've built ↓</a>
       </div>
     </section>
 
     <section id="about" class="section container">
       <h2 class="section-title">A bit about me</h2>
       <p class="prose">
-        I'm in my second year at Example University, studying computer
-        science with a soft spot for human-computer interaction. Most days
-        you'll find me debugging something, reading about design, or
-        convincing my friends that tabs vs. spaces is a fake problem.
+        I'm Sam — an engineering student focused on robotics, embedded
+        systems, and applied AI. Most of my time goes into prototyping
+        hardware projects (Arduino, ESP32, ROS2) and wiring up the web
+        dashboards that make them useful. I care about building things
+        that actually work in the real world, not just on paper.
       </p>
       <p class="prose">
-        Outside of coursework, I help run the web-dev club and mentor a
-        few first-years who are just getting started — teaching turned out
-        to be the fastest way I've ever learned anything.
+        Lately I've been into legged robots and computer vision — teaching
+        a robot dog to walk and a camera to recognize faces. Always happy
+        to nerd out about sensors, servos, or a clean CAD print.
       </p>
       <p class="currently">
-        <span class="dot"></span> Currently learning: accessibility &amp; TypeScript
+        <span class="dot"></span> Currently building: Zuko, a 12-DOF quadruped on ROS2
       </p>
     </section>
 
     <section id="work" class="section container">
-      <h2 class="section-title">Things I've worked on</h2>
+      <h2 class="section-title">Things I've built</h2>
       <div class="cards">
         <article class="card">
-          <span class="card-tag">Coursework</span>
-          <h3>Data Structures Lab</h3>
+          <span class="card-tag">Robotics</span>
+          <h3>Zuko — Robo Dog</h3>
           <p>
-            Built visual, step-by-step demos of sorting and tree algorithms
-            so my classmates could actually <em>see</em> how they work.
+            A 12-DOF quadruped robot dog running ROS2 Humble in Docker on a
+            Raspberry Pi. A full hardware + software joint project.
           </p>
+          <a class="card-link" href="https://github.com/sam-black007/zuko-robo-dog" target="_blank" rel="noopener">View repo →</a>
         </article>
         <article class="card">
-          <span class="card-tag">Project</span>
-          <h3>Study Buddy</h3>
+          <span class="card-tag">Robotics</span>
+          <h3>4-DOF Robotic Arm</h3>
           <p>
-            A tiny web app that helps students plan revision sessions.
-            Made with plain HTML, CSS, and a lot of trial and error.
+            Arduino Mega + SG90 servos, joystick-controlled with EEPROM
+            memory to save poses. My first real manipulator build.
           </p>
+          <a class="card-link" href="https://github.com/sam-black007/4dof-robotic-arm" target="_blank" rel="noopener">View repo →</a>
         </article>
         <article class="card">
-          <span class="card-tag">Club</span>
-          <h3>Web Dev Club Site</h3>
+          <span class="card-tag">IoT</span>
+          <h3>Smart Helmet (ESP32)</h3>
           <p>
-            Redesigned our club's homepage to be simpler and faster.
-            Bonus: it finally loads on the library Wi-Fi.
+            Alcohol detection, GPS tracking, and SMS alerts using ESP32,
+            MQ-3 sensor, SIM800L, and a NEO-6M GPS module.
           </p>
+          <a class="card-link" href="https://github.com/sam-black007/smart-helmet-esp32" target="_blank" rel="noopener">View repo →</a>
+        </article>
+        <article class="card">
+          <span class="card-tag">AI / ML</span>
+          <h3>Diabetes Prediction</h3>
+          <p>
+            A machine-learning model that predicts diabetes risk from
+            health metrics. Built to practice end-to-end ML workflows.
+          </p>
+          <a class="card-link" href="https://github.com/sam-black007/diabetes-prediction" target="_blank" rel="noopener">View repo →</a>
+        </article>
+        <article class="card">
+          <span class="card-tag">Web</span>
+          <h3>ChestX-Web</h3>
+          <p>
+            A web app for chest X-ray analysis — pairing a model backend
+            with a simple, usable interface.
+          </p>
+          <a class="card-link" href="https://github.com/sam-black007/ChestX-Web" target="_blank" rel="noopener">View repo →</a>
+        </article>
+        <article class="card">
+          <span class="card-tag">Robotics</span>
+          <h3>Multi-DOF Manipulator</h3>
+          <p>
+            Modular robotic manipulator with CAD design, 3D-printed
+            structure, and servo actuation.
+          </p>
+          <a class="card-link" href="https://github.com/sam-black007/multi-dof-manipulator" target="_blank" rel="noopener">View repo →</a>
         </article>
       </div>
     </section>
@@ -85,24 +116,27 @@
     <section id="skills" class="section container">
       <h2 class="section-title">What I work with</h2>
       <ul class="skills">
-        <li>HTML &amp; CSS</li>
-        <li>JavaScript</li>
+        <li>Robotics</li>
+        <li>Arduino</li>
+        <li>ESP32 / IoT</li>
+        <li>ROS2</li>
         <li>Python</li>
-        <li>Git &amp; GitHub</li>
-        <li>Figma</li>
-        <li>Technical writing</li>
+        <li>Machine Learning</li>
+        <li>CAD &amp; 3D Printing</li>
+        <li>HTML &amp; CSS</li>
+        <li>Web Dashboards</li>
       </ul>
     </section>
 
     <section id="contact" class="section container">
       <h2 class="section-title">Let's talk</h2>
       <p class="prose">
-        I'm always up for a chat about projects, internships, or why
-        dark mode is objectively correct. Reach me here:
+        I'm always up for a chat about robotics, internships, or a cool
+        hardware idea. Reach me here:
       </p>
       <ul class="contact-list">
-        <li><a href="mailto:jane.doe@example.com">jane.doe@example.com</a></li>
-        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:samjosephwb@gmail.com">samjosephwb@gmail.com</a></li>
+        <li><a href="https://github.com/sam-black007" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
     </section>
@@ -110,7 +144,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>Made by a real human (Jane) with HTML &amp; CSS. © <span id="year"></span></p>
+      <p>Made by Sam Joseph Thimothy with HTML &amp; CSS. © <span id="year"></span></p>
     </div>
   </footer>
 

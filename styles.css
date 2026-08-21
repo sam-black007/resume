@@ -202,6 +202,21 @@ body {
   font-size: 0.95rem;
 }
 
+.card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease;
+}
+
+.card-link:hover {
+  border-color: var(--accent);
+}
+
 /* Skills */
 .skills {
   display: flex;
