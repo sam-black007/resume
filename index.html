@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Doe — Portfolio &amp; Résumé</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top">Jane&nbsp;Doe</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Jane Doe</h1>
+      <p class="lead">
+        A curious computer-science student who likes turning messy ideas
+        into things that actually work. I care about clean code, clear
+        writing, and making tech a little friendlier for everyone.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Say hello</a>
+        <a class="btn-text" href="#work">See what I've made ↓</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">A bit about me</h2>
+      <p class="prose">
+        I'm in my second year at Example University, studying computer
+        science with a soft spot for human-computer interaction. Most days
+        you'll find me debugging something, reading about design, or
+        convincing my friends that tabs vs. spaces is a fake problem.
+      </p>
+      <p class="prose">
+        Outside of coursework, I help run the web-dev club and mentor a
+        few first-years who are just getting started — teaching turned out
+        to be the fastest way I've ever learned anything.
+      </p>
+      <p class="currently">
+        <span class="dot"></span> Currently learning: accessibility &amp; TypeScript
+      </p>
+    </section>
+
+    <section id="work" class="section container">
+      <h2 class="section-title">Things I've worked on</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="card-tag">Coursework</span>
+          <h3>Data Structures Lab</h3>
+          <p>
+            Built visual, step-by-step demos of sorting and tree algorithms
+            so my classmates could actually <em>see</em> how they work.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Project</span>
+          <h3>Study Buddy</h3>
+          <p>
+            A tiny web app that helps students plan revision sessions.
+            Made with plain HTML, CSS, and a lot of trial and error.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Club</span>
+          <h3>Web Dev Club Site</h3>
+          <p>
+            Redesigned our club's homepage to be simpler and faster.
+            Bonus: it finally loads on the library Wi-Fi.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2 class="section-title">What I work with</h2>
+      <ul class="skills">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git &amp; GitHub</li>
+        <li>Figma</li>
+        <li>Technical writing</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">Let's talk</h2>
+      <p class="prose">
+        I'm always up for a chat about projects, internships, or why
+        dark mode is objectively correct. Reach me here:
+      </p>
+      <ul class="contact-list">
+        <li><a href="mailto:jane.doe@example.com">jane.doe@example.com</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by a real human (Jane) with HTML &amp; CSS. © <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
